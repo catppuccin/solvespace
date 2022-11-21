@@ -7,8 +7,8 @@ import urllib.request
 
 def main():
   with urllib.request.urlopen('https://raw.githubusercontent.com/catppuccin/palette/main/palette.json') as f:
-      data = f.read().decode('utf-8')
-      colors = json.loads(data)
+    data = f.read().decode('utf-8')
+    colors = json.loads(data)
 
   colormap = {
     "BackgroundColor": "base",
