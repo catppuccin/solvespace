@@ -50,6 +50,6 @@ def main():
 
 if __name__ == "__main__":
   if len(sys.argv) < 3:
-    print("missing arguments: ./build.py [theme] [path]")
+    print("missing arguments: ./apply.py [theme] [path]")
     exit(1)
   main()

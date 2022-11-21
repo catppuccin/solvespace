@@ -77,25 +77,25 @@
    - 🌻 Latte:
 
      ```shell
-     ./build.py latte ~/.config/solvespace/settings.json
+     ./apply.py latte ~/.config/solvespace/settings.json
      ```
 
    - 🪴 Frappe:
 
      ```shell
-     ./build.py frappe ~/.config/solvespace/settings.json
+     ./apply.py frappe ~/.config/solvespace/settings.json
      ```
 
    - 🌺 Macchiato:
 
      ```shell
-     ./build.py macchiato ~/.config/solvespace/settings.json
+     ./apply.py macchiato ~/.config/solvespace/settings.json
      ```
 
    - 🌿 Mocha:
 
      ```shell
-     ./build.py mocha ~/.config/solvespace/settings.json
+     ./apply.py mocha ~/.config/solvespace/settings.json
      ```
 
 ### Merging with your current settings manually
