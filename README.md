@@ -106,6 +106,11 @@
 
 3. At the second last line of the file (before the `}`), add a comma `,` and then paste the content of your theme (excluding `{` and `}`). You can ignore any warnings about duplicate keys, as SolveSpace will clean them up.
 
+## 🙋 FAQ
+
+- Q: **_"Why is the property window unstyled?"_**\
+  A: The property window colors are [hardcoded](https://github.com/solvespace/solvespace/blob/50cbecbe7249a1a47561fca33919a08db7970e49/src/textwin.cpp#L196)
+
 ## 💝 Thanks to
 
 - [ndsboy](https://github.com/ndsboy)
