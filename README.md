@@ -6,32 +6,32 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/ndsboy/solvespace/stargazers"><img src="https://img.shields.io/github/stars/ndsboy/solvespace?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/ndsboy/solvespace/issues"><img src="https://img.shields.io/github/issues/ndsboy/solvespace?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/ndsboy/solvespace/contributors"><img src="https://img.shields.io/github/contributors/ndsboy/solvespace?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/solvespace/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/solvespace?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/solvespace/issues"><img src="https://img.shields.io/github/issues/catppuccin/solvespace?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/solvespace/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/solvespace?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://github.com/ndsboy/solvespace/blob/main/assets/preview.png"/>
+	<img src="https://github.com/catppuccin/solvespace/blob/main/assets/preview.png"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://github.com/ndsboy/solvespace/blob/main/assets/latte.png"/>
+<img src="https://github.com/catppuccin/solvespace/blob/main/assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://github.com/ndsboy/solvespace/blob/main/assets/frappe.png"/>
+<img src="https://github.com/catppuccin/solvespace/blob/main/assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://github.com/ndsboy/solvespace/blob/main/assets/macchiato.png"/>
+<img src="https://github.com/catppuccin/solvespace/blob/main/assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://github.com/ndsboy/solvespace/blob/main/assets/mocha.png"/>
+<img src="https://github.com/catppuccin/solvespace/blob/main/assets/mocha.png"/>
 </details>
 
 ## Usage
@@ -43,25 +43,25 @@
    - 🌻 Latte:
 
      ```shell
-     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/ndsboy/solvespace/main/themes/latte.json
+     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/catppuccin/solvespace/main/themes/latte.json
      ```
 
    - 🪴 Frappe:
 
      ```shell
-     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/ndsboy/solvespace/main/themes/frappe.json
+     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/catppuccin/solvespace/main/themes/frappe.json
      ```
 
    - 🌺 Macchiato:
 
      ```shell
-     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/ndsboy/solvespace/main/themes/macchiato.json
+     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/catppuccin/solvespace/main/themes/macchiato.json
      ```
 
    - 🌿 Mocha:
 
      ```shell
-     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/ndsboy/solvespace/main/themes/mocha.json
+     curl -o ~/.config/solvespace/settings.json https://raw.githubusercontent.com/catppuccin/solvespace/main/themes/mocha.json
      ```
 
 ### Merging with your current settings via script
@@ -69,7 +69,7 @@
 1. Clone this repository locally
 
    ```shell
-   git clone https://github.com/ndsboy/solvespace.git && cd solvespace
+   git clone https://github.com/catppuccin/solvespace.git && cd solvespace
    ```
 
 2. Apply the theme via script:
