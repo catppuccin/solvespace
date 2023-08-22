@@ -6,7 +6,7 @@ import sys
 import urllib.request
 
 def main():
-  with urllib.request.urlopen('https://raw.githubusercontent.com/catppuccin/palette/main/palette.json') as f:
+  with urllib.request.urlopen('https://raw.githubusercontent.com/catppuccin/palette/v0.2.0/palette.json') as f:
     data = f.read().decode('utf-8')
     colors = json.loads(data)
 
