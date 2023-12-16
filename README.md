@@ -106,10 +106,21 @@
 
 3. At the second last line of the file (before the `}`), add a comma `,` and then paste the content of your theme (excluding `{` and `}`). You can ignore any warnings about duplicate keys, as SolveSpace will clean them up.
 
-## 🙋 FAQ
+### For advanced users: Change property window and toolbar colors
 
-- Q: **_"Why is the property window unstyled?"_**\
-  A: The property window colors are [hardcoded](https://github.com/solvespace/solvespace/blob/50cbecbe7249a1a47561fca33919a08db7970e49/src/textwin.cpp#L196)
+Since these colors are [hardcoded](https://github.com/solvespace/solvespace/blob/master/src/textwin.cpp#L196), you need to compile your own version of solvespace. You can find the instructions on the [solvespace github page](https://github.com/solvespace/solvespace/tree/master#building-on-linux).
+
+In the [patches folder](https://github.com/catppuccin/solvespace/tree/main/patches) you'll find patch files for the toolbar.cpp and textwin.cpp.
+Following the installations instructions mentioned above, try to compile solvespace without applying the patches first, to check if everything works.
+Afterwards, patch the two files and then recompile solvespace.
+
+```
+patch src/textwin.cpp <theme>_textwin.patch
+patch src/toolbar.cpp <theme>_toolbar.patch
+
+cd build
+make
+```
 
 ## 💝 Thanks to
 

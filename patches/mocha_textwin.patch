@@ -1,0 +1,44 @@
+198,209c198,209
+<     { 'd', RGBi(255, 255, 255) },  // Default   : white
+<     { 'l', RGBi(100, 200, 255) },  // links     : blue
+<     { 't', RGBi(255, 200, 100) },  // tree/text : yellow
+<     { 'h', RGBi( 90,  90,  90) },
+<     { 's', RGBi( 40, 255,  40) },  // Ok        : green
+<     { 'm', RGBi(200, 200,   0) },
+<     { 'r', RGBi(  0,   0,   0) },  // Reverse   : black
+<     { 'x', RGBi(255,  20,  20) },  // Error     : red
+<     { 'i', RGBi(  0, 255, 255) },  // Info      : cyan
+<     { 'g', RGBi(128, 128, 128) },  // Disabled  : gray
+<     { 'b', RGBi(200, 200, 200) },
+<     { 0,   RGBi(  0,   0,   0) }
+---
+>     { 'd', RGBi(205, 214, 244) },  // Default   : white
+>     { 'l', RGBi(137, 180, 250) },  // links     : blue
+>     { 't', RGBi(249, 226, 175) },  // tree/text : yellow
+>     { 'h', RGBi(108, 112, 134) },
+>     { 's', RGBi(166, 227, 161) },  // Ok        : green
+>     { 'm', RGBi(249, 226, 175) },
+>     { 'r', RGBi(17, 17, 27) },  // Reverse   : black
+>     { 'x', RGBi(243, 139, 168) },  // Error     : red
+>     { 'i', RGBi(137, 220, 235) },  // Info      : cyan
+>     { 'g', RGBi(108, 112, 134) },  // Disabled  : gray
+>     { 'b', RGBi(166, 173, 200) },
+>     { 0,   RGBi(30, 30, 46) }
+213,216c213,216
+<     { 'd', RGBi(  0,   0,   0) },  // Default   : black
+<     { 't', RGBi( 34,  15,  15) },
+<     { 'a', RGBi( 25,  25,  25) },  // Alternate : dark gray
+<     { 'r', RGBi(255, 255, 255) },  // Reverse   : white
+---
+>     { 'd', RGBi(30, 30, 46) },  // Default   : black
+>     { 't', RGBi(69, 71, 90) },
+>     { 'a', RGBi(49, 50, 68) },  // Alternate : dark gray
+>     { 'r', RGBi(205, 214, 244) },  // Reverse   : white
+621c621
+<                            /*fillColor=*/{ 30, 30, 30, 255 }, /*outlineColor=*/{});
+---
+>                            /*fillColor=*/{ 49, 50, 68, 255 }, /*outlineColor=*/{});
+951c951
+<     lighting.backgroundColor = RGBi(0, 0, 0);
+---
+>     lighting.backgroundColor = RGBi(30, 30, 46);
