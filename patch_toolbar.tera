@@ -1,0 +1,25 @@
+---
+whiskers:
+  version: "2.0.0"
+  filename: "patches/{{flavor.identifier}}_toolbar.patch"
+  matrix:
+    - flavor
+---
+
+{%- macro rgb(c) -%}
+{{ c.rgb.r }}, {{ c.rgb.g }}, {{ c.rgb.b }}
+{%- endmacro c -%}
+
+183c183
+<                         /*fillColor=*/{ 30, 30, 30, 255 },
+---
+>                         /*fillColor=*/{ {{ self::rgb(c=flavor.colors.surface0) }}, 255 },
+201c201
+<                                  /*fillColor=*/{ 45, 45, 45, 255 },
+---
+>                                  /*fillColor=*/{ {{ self::rgb(c=flavor.colors.surface1) }}, 255 },
+223c223
+<                                  /*fillColor=*/{ 255, 255, 0, 75 },
+---
+>                                  /*fillColor=*/{ {{ self::rgb(c=flavor.colors.yellow) }}, 75 },
+{# empty line #}
