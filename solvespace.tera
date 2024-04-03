@@ -1,0 +1,38 @@
+---
+whiskers:
+  version: "2.0.0"
+  filename: "themes/{{flavor.identifier}}.json"
+  matrix:
+    - flavor
+---
+
+{%- macro shift(c) -%}
+{{ c.rgb.b * 256 * 256 + c.rgb.g * 256 + c.rgb.r }}
+{%- endmacro c -%}
+
+{
+  "BackgroundColor": {{ self::shift(c=flavor.colors.base) }},
+  "ModelColor_0": {{ self::shift(c=flavor.colors.text) }},
+  "ModelColor_1": {{ self::shift(c=flavor.colors.overlay0) }},
+  "ModelColor_2": {{ self::shift(c=flavor.colors.base) }},
+  "ModelColor_3": {{ self::shift(c=flavor.colors.red) }},
+  "ModelColor_4": {{ self::shift(c=flavor.colors.green) }},
+  "ModelColor_5": {{ self::shift(c=flavor.colors.teal) }},
+  "ModelColor_6": {{ self::shift(c=flavor.colors.blue) }},
+  "ModelColor_7": {{ self::shift(c=flavor.colors.mauve) }},
+  "Style_ActiveGrp_Color": {{ self::shift(c=flavor.colors.text) }},
+  "Style_Construction_Color": {{ self::shift(c=flavor.colors.green) }},
+  "Style_InactiveGrp_Color": {{ self::shift(c=flavor.colors.surface0) }},
+  "Style_Datum_Color": {{ self::shift(c=flavor.colors.green) }},
+  "Style_SolidEdge_Color": {{ self::shift(c=flavor.colors.subtext0) }},
+  "Style_Constraint_Color": {{ self::shift(c=flavor.colors.mauve) }},
+  "Style_Selected_Color": {{ self::shift(c=flavor.colors.red) }},
+  "Style_Hovered_Color": {{ self::shift(c=flavor.colors.yellow) }},
+  "Style_ContourFill_Color": {{ self::shift(c=flavor.colors.lavender) }},
+  "Style_Normals_Color": {{ self::shift(c=flavor.colors.blue) }},
+  "Style_Analyze_Color": {{ self::shift(c=flavor.colors.sky) }},
+  "Style_DrawError_Color": {{ self::shift(c=flavor.colors.red) }},
+  "Style_DimSolid_Color": {{ self::shift(c=flavor.colors.surface0) }},
+  "Style_HiddenEdge_Color": {{ self::shift(c=flavor.colors.overlay0) }},
+  "Style_Outline_Color": {{ self::shift(c=flavor.colors.subtext0) }}
+}
