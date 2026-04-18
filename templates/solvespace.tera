@@ -1,15 +1,13 @@
 ---
 whiskers:
   version: "^2.9.0"
-  filename: "themes/{{flavor.identifier}}.json"
   matrix:
     - flavor
+  filename: "themes/{{ flavor.identifier }}.json"
 ---
-
 {%- macro shift(c) -%}
 {{ c.rgb.b * 256 * 256 + c.rgb.g * 256 + c.rgb.r }}
 {%- endmacro c -%}
-
 {
   "BackgroundColor": {{ self::shift(c=flavor.colors.base) }},
   "ModelColor_0": {{ self::shift(c=flavor.colors.text) }},

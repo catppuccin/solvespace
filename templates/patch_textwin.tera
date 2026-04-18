@@ -1,15 +1,13 @@
 ---
 whiskers:
   version: "^2.9.0"
-  filename: "patches/{{flavor.identifier}}_textwin.patch"
   matrix:
     - flavor
+  filename: "patches/{{ flavor.identifier }}_textwin.patch"
 ---
-
 {%- macro rgbi(c) -%}
 RGBi({{ c.rgb.r }}, {{ c.rgb.g }}, {{ c.rgb.b }})
 {%- endmacro c -%}
-
 198,209c198,209
 <     { 'd', RGBi(255, 255, 255) },  // Default   : white
 <     { 'l', RGBi(100, 200, 255) },  // links     : blue
