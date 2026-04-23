@@ -1,15 +1,13 @@
 ---
 whiskers:
-  version: "2.0.0"
-  filename: "patches/{{flavor.identifier}}_toolbar.patch"
+  version: "^2.9.0"
   matrix:
     - flavor
+  filename: "patches/{{ flavor.identifier }}_toolbar.patch"
 ---
-
 {%- macro rgb(c) -%}
 {{ c.rgb.r }}, {{ c.rgb.g }}, {{ c.rgb.b }}
 {%- endmacro c -%}
-
 183c183
 <                         /*fillColor=*/{ 30, 30, 30, 255 },
 ---
